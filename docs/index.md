@@ -40,6 +40,6 @@ I found this thread that really helped me: https://forums.raspberrypi.com/viewto
 
 ### I made a firmware files for the Linux display driver panel-mipi-dbi:
 
-    Source: Anycubic Kobra Neo Marlin fork [BSP SPI TFT driver](https://github.com/jokubasver/Kobra_Neo/blob/d3406176308f1839130edc08825f500a72c02f64/source/board/bsp_spi_tft.cpp#L406C12-L406C12). 
+Source: Anycubic Kobra Neo Marlin fork [BSP SPI TFT driver](https://github.com/jokubasver/Kobra_Neo/blob/d3406176308f1839130edc08825f500a72c02f64/source/board/bsp_spi_tft.cpp#L406C12-L406C12). 
 
 
