@@ -2,11 +2,23 @@
 
 ## Using a Raspberry Pi4 as the host
 
-Flash the SD card using Mainsail OS
+### Flash the SD card using Mainsail OS
 
 Using the LCD screen as well as a webcam may cause undervoltage to be reported. I used a RPi5 powersupply rated as 20W with which there were no further warnings.
 
 There were signficant problems with the onboard WiFi with inability to connect via SSH or though the webpage. I used a USB dongle with which the connection as been stable so far. I had similar problems with the RPi3B+ as regards to WiFi and will have to test the same settings with it.
+
+_The onboard WiFi has to be disabled in order for the dongle to work_
+Add `dtoverlay=disable-wifi` to `/boot/firmware/config.txt` to disable the onboard adapter
+Set a static IP using nmtui: `sudo nmtui` and change the settings as required
+
+## Config files for the Printer
+
+I got these from the excellent guide: https://github.com/1coderookie/KobraGoNeoInsights
+
+I did get frequent layer shifts with these settings though and I reduced the acceleration to 1500.
+
+I also have a very bad bed requiring signficant tramming with poor success. I change the settings for the bed mesh to help deal with this. 
 
 ## Connections
 
