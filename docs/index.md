@@ -59,4 +59,16 @@ dtparam=reset-gpio=25,dc-gpio=24, rotate=180
 
 Reboot and the CLI screen should now show
 
+## KlipperScreen
+
+Install KlipperScreen using [KIAUH](https://github.com/dw-0/kiauh).
+
+**Note**: Choose X-server and not Wayland when setting up. There may be a way for Wayland to work but I haven't solved it yet and it doesn't seem worth the effore.
+
+## Screen Encoder
+
+Install the driver for the screen encoder from this other excellent [site](https://github.com/SomeSpaceNerd/KlipperScreen-Encoder-Driver).
+
+This works like a charm and has enabled the use of the rotary encoder and clicker even when the WiFi is down and you can no longer access the pi from another device.
+
 
