@@ -1,1 +1,3 @@
-# This is how I got the Anycubic Kobra Neo screen to work with Klipper
+# Using the Anycubic Kobra Neo screen with Klipper
+
+## Using a Raspberry Pi4 as the host
