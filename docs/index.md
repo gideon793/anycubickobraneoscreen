@@ -42,4 +42,21 @@ I found this thread that really helped me: https://forums.raspberrypi.com/viewto
 
 Source: Anycubic Kobra Neo Marlin fork [BSP SPI TFT driver](https://github.com/jokubasver/Kobra_Neo/blob/d3406176308f1839130edc08825f500a72c02f64/source/board/bsp_spi_tft.cpp#L406C12-L406C12). 
 
+Further details on how to make the firmware are on [this thread](https://forums.raspberrypi.com/viewtopic.php?t=358240&hilit=Ili9341#p2165638).
+
+The firmware bin is in the files folder of this repository.
+
+This has to be copied to `/lib/firmware` on the pi.
+
+Once that is done, add the following to the `config.txt` file in `/boot/firmware`:
+
+```dtoverlay=mipi-dbi-spi,speed=48000000
+dtparam=compatible=anycubic\0panel-mipi-dbi-spi
+dtparam=write-only,cpha,cpol
+dtparam=width=320,height=240,width-mm=57,height-mm=43
+dtparam=reset-gpio=25,dc-gpio=24, rotate=180
+```
+
+Reboot and the CLI screen should now show
+
 
